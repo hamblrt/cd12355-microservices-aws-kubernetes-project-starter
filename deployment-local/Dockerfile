@@ -11,7 +11,7 @@ ENV DB_NAME=mypostgresdb
 WORKDIR /analytics
 
 # Set up python build requirements and ensure up to date
-COPY ../analytics/requirements.txt requireemnts.txt
+COPY ../analytics/requirements.txt requirements.txt
 RUN apt update -y
 RUN apt install -y build-essential libpq-dev
 RUN pip install --upgrade pip setuptools wheel
