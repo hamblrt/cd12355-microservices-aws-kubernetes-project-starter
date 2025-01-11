@@ -1,12 +1,5 @@
 FROM python:3.10-slim-buster
 
-# Set environment only for local testing
-ENV DB_USERNAME=mypostgresuser
-ENV DB_PASSWORD=mypostgrespassword
-ENV DB_HOST=127.0.0.1
-ENV DB_PORT=5433
-ENV DB_NAME=mypostgresdb
-
 # Create working directory
 WORKDIR /analytics
 
