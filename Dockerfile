@@ -11,7 +11,7 @@ RUN pip install --upgrade pip setuptools wheel
 RUN pip install -r requirements.txt
 
 # Copy the application code
-COPY ./analytics/*.py .
+COPY ./analytics/*.py ./
 
 # Run the application
 CMD python app.py
